@@ -3,7 +3,6 @@ import { Heart, Star } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import Rating from "../star/Rating";
 import reviewStar from "../../utils/reviewStar";

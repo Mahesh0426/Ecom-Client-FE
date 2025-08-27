@@ -3,14 +3,13 @@ import { Heart, Star } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { useSelector, useDispatch } from "react-redux";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 
 import reviewStar from "../../utils/reviewStar";
 import Rating from "../star/Rating";
 import {
   fetchWishlistAction,
-  getUserAction,
   toggleWishlistAction,
 } from "../../features/user/userAction";
 import { toast } from "react-toastify";

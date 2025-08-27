@@ -14,11 +14,11 @@ const SearchBar = ({ allProducts }) => {
       return;
     }
 
-    const lowerSearch = searchTerm.toLowerCase();
-    const filtered = allProducts.filter((product) => {
+    const lowerSearch = searchTerm?.toLowerCase();
+    const filtered = allProducts?.filter((product) => {
       return (
-        product.title.toLowerCase().includes(lowerSearch) ||
-        product.category.toLowerCase().includes(lowerSearch)
+        product.title?.toLowerCase()?.includes(lowerSearch) ||
+        product.category?.toLowerCase()?.includes(lowerSearch)
       );
     });
 

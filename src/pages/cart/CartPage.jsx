@@ -228,7 +228,11 @@ const CartPage = () => {
                       </span>
                     </div>
                     <span className="text-green-600">
-                      -${appliedCoupon?.value?.toFixed(2)}
+                      -$
+                      {(
+                        (Number(appliedCoupon?.value) / 100) *
+                        subtotal
+                      ).toFixed(2)}
                     </span>
                   </div>
                 )}
